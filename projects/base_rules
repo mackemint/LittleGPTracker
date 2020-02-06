@@ -37,31 +37,31 @@ endef
 #---------------------------------------------------------------------------------
 %.o: %.CPP
 	@echo $(notdir $<)
-	$(CXX) -MMD -MF $(DEPSDIR)/$*.d $(CXXFLAGS) -c $< -o $@
+	$(CXX) -m32 -MMD -MF $(DEPSDIR)/$*.d $(CXXFLAGS) -c $< -o $@
 	@$(adjustdepends)
 
 #---------------------------------------------------------------------------------
 %.o: %.c
 	@echo $(notdir $<)
-	@$(CC) -MMD -MF $(DEPSDIR)/$*.d $(CFLAGS) -c $< -o $@
+	@$(CC) -m32 -MMD -MF $(DEPSDIR)/$*.d $(CFLAGS) -c $< -o $@
 	@$(adjustdepends)
 
 #---------------------------------------------------------------------------------
 %.o: %.s
 	@echo $(notdir $<)
-	@$(CC) -MMD -MF $(DEPSDIR)/$*.d -x assembler-with-cpp $(ASFLAGS) -c $< -o $@
+	@$(CC) -m32 -MMD -MF $(DEPSDIR)/$*.d -x assembler-with-cpp $(ASFLAGS) -c $< -o $@
 	@$(adjustdepends)
 
 #---------------------------------------------------------------------------------
 %.o: %.m
 	@echo $(notdir $<)
-	$(CC) -MMD -MF $(DEPSDIR)/$*.d -x objective-c $(CFLAGS) -c $< -o $@
+	$(CC) -m32 -MMD -MF $(DEPSDIR)/$*.d -x objective-c $(CFLAGS) -c $< -o $@
 	@$(adjustdepends)
 
 #---------------------------------------------------------------------------------
 %.o: %.S
 	@echo $(notdir $<)
-	@$(CC) -MMD -MF $(DEPSDIR)/$*.d -x assembler-with-cpp $(ASFLAGS) -c $< -o $@
+	@$(CC) -m32 -MMD -MF $(DEPSDIR)/$*.d -x assembler-with-cpp $(ASFLAGS) -c $< -o $@
 	@$(adjustdepends)
 
 #---------------------------------------------------------------------------------
