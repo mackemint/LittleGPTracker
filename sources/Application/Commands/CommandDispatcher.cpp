@@ -59,6 +59,7 @@ bool CommandDispatcher::Init() {
 	ApplicationCommandDispatcher *acd=ApplicationCommandDispatcher::GetInstance() ;
 	mapTrigger(TRIG_TEMPO_TAP,URL_TEMPO_TAP,*acd) ;
 	mapTrigger(TRIG_SEQ_QUEUE_ROW,URL_QUEUE_ROW,*acd) ;
+	mapTrigger(TRIG_FILTER_CUTOFF_CH1,URL_QUEUE_ROW,*acd) ;
 
 	//	ControlRoom::GetInstance()->Dump() ;
 	return true ;

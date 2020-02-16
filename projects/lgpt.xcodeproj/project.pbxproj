@@ -381,7 +381,7 @@
 		737D13200BCE6B1C00099CB3 /* UnixFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UnixFileSystem.h; sourceTree = "<group>"; };
 		737D13220BCE6B1C00099CB3 /* UnixProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = UnixProcess.cpp; sourceTree = "<group>"; };
 		737D13230BCE6B1C00099CB3 /* UnixProcess.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = UnixProcess.h; sourceTree = "<group>"; };
-		737D14DB0BCE713200099CB3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		737D14DB0BCE713200099CB3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		73929F57150D0C36004BA2BA /* RtAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RtAudio.cpp; path = ../../LittleGPTracker/sources/Externals/RTAudio/RtAudio.cpp; sourceTree = SOURCE_ROOT; };
 		73929F58150D0C36004BA2BA /* RtAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RtAudio.h; path = ../../LittleGPTracker/sources/Externals/RTAudio/RtAudio.h; sourceTree = SOURCE_ROOT; };
 		73929F59150D0C36004BA2BA /* RtError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RtError.h; path = ../../LittleGPTracker/sources/Externals/RTAudio/RtError.h; sourceTree = SOURCE_ROOT; };
@@ -1398,6 +1398,8 @@
 /* Begin PBXProject section */
 		20286C28FDCF999611CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "lgpt" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;

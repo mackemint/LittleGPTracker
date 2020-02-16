@@ -16,6 +16,7 @@ public:
 	void OnQueueRow() ;
 	void OnNudgeDown() ;
 	void OnNudgeUp() ;
+	void OnFilterCutoff(int channel, ushort value) 
 private:
 	Project *project_ ;
 } ;

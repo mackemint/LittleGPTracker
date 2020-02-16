@@ -30,4 +30,6 @@
 
 #define TRIG_TEMPO_TAP MAKE_FOURCC('T','T','A','P')
 #define TRIG_SEQ_QUEUE_ROW MAKE_FOURCC('T','S','Q','R')
+
+#define TRIG_FILTER_CUTOFF_CH1 MAKE_FOURCC('1','F','L','T')
 #endif
